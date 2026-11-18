@@ -1,0 +1,24 @@
+{
+  "name": "anbar-server",
+  "version": "1.0.0",
+  "description": "سرور مرکزی سامانه مدیریت انبار و کنترل پروژه (شبکه محلی، بدون نیاز به اینترنت)",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "exceljs": "^3.4.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "node-cron": "^4.6.0"
+  }
+}
