@@ -1,3 +1,34 @@
+<!-- gen:header -->
+<p align="center"><img src=".github/cover.svg" alt="Exam Dataset Builder" width="100%"></p>
+
+<h1 align="center">Exam Dataset Builder</h1>
+<p align="center"><b>تبدیل PDF و DOCX آزمون‌ها به بانک سؤال ساختاریافته با OCR فارسی</b><br><i>Turn exam PDFs/DOCX (incl. scans) into a structured question bank</i></p>
+<p align="center"><img alt="FastAPI" src="https://img.shields.io/badge/-FastAPI-14b8a6?style=for-the-badge"> <img alt="PostgreSQL" src="https://img.shields.io/badge/-PostgreSQL-14b8a6?style=for-the-badge"> <img alt="Celery" src="https://img.shields.io/badge/-Celery-14b8a6?style=for-the-badge"> <img alt="Redis" src="https://img.shields.io/badge/-Redis-14b8a6?style=for-the-badge"> <img alt="OCR" src="https://img.shields.io/badge/-OCR-14b8a6?style=for-the-badge"> <img alt="React" src="https://img.shields.io/badge/-React-14b8a6?style=for-the-badge"></p>
+
+<div dir="rtl">
+
+## ✨ امکانات
+
+- OCR محلی Tesseract و پیش‌پردازش تصویر با OpenCV
+- تشخیص سؤال، گزینه و پاسخ‌نامه در فارسی و انگلیسی
+- داشبورد RTL برای بازبینی و تأیید
+- خروجی JSON، CSV و ZIP
+- به‌همراه سامانه‌ی آفلاین انبار و کنترل پروژه (anbar)
+
+</div>
+
+## 🚀 Quick start
+
+```bash
+copy .env.example .env
+docker compose up -d
+```
+
+---
+
+<!-- gen:docs -->
+## 📚 مستندات کامل · Full documentation
+
 # Exam Dataset Builder
 
 سامانه production-oriented برای تبدیل PDF متنی، PDF اسکن‌شده و DOCX آزمون‌های فارسی/انگلیسی به بانک سؤال ساختاریافته، بازبینی انسانی و خروجی JSON/CSV/ZIP.
@@ -117,3 +148,8 @@ docs/                     معماری، API و عملیات
 ## امنیت production
 
 این repository احراز هویت application-level را فعال نمی‌کند تا با SSO/OIDC سازمان مقصد تداخل نداشته باشد. پیش از دسترسی اینترنتی، API و UI را پشت reverse proxy دارای TLS و OIDC قرار دهید، CORS را محدود کنید، secretها را در secret manager نگه دارید و دسترسی MinIO console را عمومی نکنید. مدل `User` و `user_id`های audit برای اتصال identity provider آماده‌اند.
+
+---
+
+<p align="center">ساخته‌شده توسط <a href="https://mahsen81.ir"><b>محسن جباره‌اصل</b></a> — برنامه‌نویسی، طراحی سایت، ربات و هوش مصنوعی<br>
+Built by <a href="https://mahsen81.ir">Mohsen Jabbareh-Asl</a> · ⭐ اگر مفید بود، ستاره بدهید · Need a custom version? <a href="https://mahsen81.ir">Get in touch</a></p>
